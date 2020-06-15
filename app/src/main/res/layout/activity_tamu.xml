@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".tamuActivity">
+
+        <ImageView
+            android:id="@+id/image_view_icon_firebase_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/admin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_idnama"
+            android:hint="Nama Tamu"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_idmasuk"
+            android:inputType="number"
+            android:hint="Kunci Akses"/>
+<!--        <TextView-->
+<!--            android:id="@+id/idtamu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="-"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="18sp"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            tools:ignore="InvalidId" />-->
+
+        <Button
+            android:id="@+id/btn_akses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:onClick="aksesData"
+            android:text="Get Key"
+            android:textColor="#fff"
+            android:background="@drawable/button_default"/>
+<!--        <Button-->
+<!--            android:id="@+id/btn_key"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginStart="42dp"-->
+<!--            android:layout_marginLeft="42dp"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:layout_marginRight="32dp"-->
+<!--            android:onClick="akseskey"-->
+<!--            android:text="Get Key"-->
+<!--            android:textColor="#fff"-->
+<!--            android:background="@drawable/button_default"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_decrypt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginStart="42dp"-->
+<!--            android:layout_marginLeft="42dp"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:layout_marginRight="32dp"-->
+<!--            android:textColor="#fff"-->
+<!--            android:background="@color/colorPrimaryDark"-->
+
+<!--            android:onClick="decrypt"-->
+<!--            android:text="Decrypt" />-->
+
+        <Button
+            android:id="@+id/btn_izin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:onClick="loginData"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_default"
+            android:text="Login"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:onClick="loginData"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_default"
+            android:text="Sign Out"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</ScrollView>
